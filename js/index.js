@@ -61,7 +61,7 @@ $(function() {
 $(document).ready(function(){
     $('body').disableSelection();
     //畫面載入時就要出現的動畫
-    setTimeOut(function(){
+    setTimeout(function(){
         $('.main-image').addClass('animEndOrigin');
     },500);
     for(var i=1;i<5;i++)
