@@ -61,7 +61,9 @@ $(function() {
 $(document).ready(function(){
     $('body').disableSelection();
     //畫面載入時就要出現的動畫
-    $('.main-image').addClass('animEndOrigin');
+    setTimeOut(function(){
+        $('.main-image').addClass('animEndOrigin');
+    },500);
     for(var i=1;i<5;i++)
-        $('.section3-col'+i).setScrollAnim(true,0.2);
+    $('.section3-col'+i).setScrollAnim(true,0.2);
 });
