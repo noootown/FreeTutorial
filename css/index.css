@@ -351,6 +351,19 @@ text-align: center;
 .footer-col{
 text-align:center;
 }
+
+#user{
+    background:#EFEFEF;
+}
+.section5-col{
+    font-size:40px; 
+    text-align:center;
+}
+.val{
+    margin-top:80px;
+    color:red;
+}
+
 @media (max-width: 991px) {
 
 .nav-link {

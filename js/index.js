@@ -66,4 +66,16 @@ $(document).ready(function(){
     },500);
     for(var i=1;i<5;i++)
     $('.section3-col'+i).setScrollAnim(true,0.2);
+    var self=$('#user');
+    $(window).scroll(function(){
+       if($(window).scrollTop()+$(window).height()*(1-0.1)>self.offset().top &&  $(window).scrollTop()<self.offset().top && !self.hasClass('active')){
+            new CountUp("val1",0,804).start();
+            new CountUp("val2",0,706).start();
+            new CountUp("val3",0,34).start();
+       }
+       setTimeout(function(){
+        self.addClass('active');
+       },2000)
+    });
+
 });
